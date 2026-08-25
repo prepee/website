@@ -1,0 +1,11 @@
+#box1 {
+    width: 770000px; 
+    height: 140px; 
+    border: 0px solid black;
+    background-color: rgba(0, 0, 0, 0.801);
+    
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative; 
+    overflow: visible; 
+    }
