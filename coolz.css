@@ -1,0 +1,92 @@
+body {
+ margin: 0px;
+}
+
+  txt {
+    color: rgb(119, 118, 118);
+    }
+
+     
+      .topbar {  
+        background: linear-gradient(to bottom, #836caf 27%, #703d8d 60%);
+        border-color: linear-gradient(to bottom, #141414 27%, #415b74 60%);;
+        overflow: hidden;
+        position: static; top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+        margin: 5px;
+        border-radius: 23px;
+        color: white;
+   
+      }
+
+      .topbar a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+
+      }
+
+      .topbar a:hover {
+        background-color: #795094;
+        border-radius: 4px;
+
+      }
+
+      .logo {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+         background: linear-gradient(to bottom, #9b86be 27%, #6c97b9 60%);
+        display: flex;
+        gap: 20px;
+        border-radius: 10px;
+   
+      }
+
+.bgimageholder {
+  width: 796px;
+  height: 675px;
+
+  position: relative;
+box-shadow:  0 0 11px 13px rgba(0, 0, 0, 0.397);
+    
+  background-image: url('https://crzy4chez.party/images!/main%20site%20images/app%20background3.png');
+  background-repeat: no-repeat;
+   box-shadow: inset radial-gradient(circle, rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 100%),;
+}
+
+.bgcolor {
+  position: absolute;
+  
+  top: 29px;
+  bottom: 10px;
+  left: 8px;
+  right: 8px;
+  
+background-color: #83b6e6;
+  
+  
+  
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+
+#textbox1 {
+    border: 2px solid rgb(96, 233, 243) ;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    padding: 6px;
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+
+    width: 720px;
+    height: 275px;
+    background-color: rgba(156, 245, 218, 0.76);
+}
