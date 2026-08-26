@@ -1,0 +1,235 @@
+body {
+ margin: 0px;
+}
+
+  txt {
+    color: rgb(119, 118, 118);
+    }
+
+     
+      .topbar {  
+        background: linear-gradient(to bottom, #836caf 27%, #703d8d 60%);
+        border-color: linear-gradient(to bottom, #141414 27%, #415b74 60%);;
+        overflow: hidden;
+        position: static; top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+        margin: 5px;
+        border-radius: 23px;
+        color: white;
+   
+      }
+
+      .topbar a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+
+      }
+
+      .topbar a:hover {
+        background-color: #795094;
+        border-radius: 4px;
+
+      }
+
+      .logo {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+         background: linear-gradient(to bottom, #9b86be 27%, #6c97b9 60%);
+        display: flex;
+        gap: 20px;
+        border-radius: 10px;
+   
+      }
+
+.bgimageholder {
+  width: 796px;
+  height: 675px;
+
+  position: relative;
+box-shadow:  0 0 11px 13px rgba(0, 0, 0, 0.397);
+    
+  background-image: url('https://crzy4chez.party/images!/main%20site%20images/app%20background3.png');
+  background-repeat: no-repeat;
+   box-shadow: inset radial-gradient(circle, rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 100%),;
+}
+
+.bgcolor {
+  position: absolute;
+  
+  top: 29px;
+  bottom: 10px;
+  left: 8px;
+  right: 8px;
+  
+background-color: #83b6e6;
+  
+  
+  
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.bgimageholderlong {
+  width: 1075px;
+  height: 672px;
+  display: grid;
+  margin: 0 auto;
+
+  position: relative;
+box-shadow:  0 0 10px 13px rgba(0, 0, 0, 0.397);
+    
+  background-image: url(https://crzy4chez.party/images!/main%20site%20images/app_backgroundlong.png);
+  background-repeat: no-repeat;
+   box-shadow: inset radial-gradient(circle, rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 100%),;
+    position: relative; 
+  overflow: hidden;
+}
+.bgcolor2 {
+
+
+  position: absolute;
+  top: 28px;
+  bottom: 8px;
+  left: 8px;
+  right: 7px;
+  background-color: #83b6e6;
+  padding: 0; 
+  box-sizing: border-box;
+
+  overflow: auto; 
+}
+
+
+.left-black-box {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%; /* Spans the full height of the window frame */      
+  background-image: url(/images!/SidebarBackground.jpeg);
+  z-index: 99;   /* Higher than the scroll content so it floats on top */
+  box-sizing: border-box;
+
+  transform: translateX(-100%); 
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s;
+}
+
+.left-black-box.active {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.window-scroll-content {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; 
+  padding: 20px;    
+  box-sizing: border-box;
+
+}
+
+
+.topright {
+  position: absolute;
+  top:0px;
+  right: 15px;
+  font-size: 20px;
+}
+.topright2 {
+  position: sticky;
+  top: 0px;
+  float: right;
+  font-size: 20px;
+  z-index: 10;   
+}
+
+/* target the container divs inside your side panel */
+#side-panel .menu-item-container {
+  text-align: left;    
+  margin: 0;           
+  padding: 0;          
+  position: relative;  /* structural anchor for the absolute text layering */
+}
+
+/* style the links to contain the hover properties together */
+#side-panel .menu-item-container a {
+  display: block;
+  position: relative;
+  width: 180px;        /* match your button width */
+  height: auto;
+  z-index: 1;
+  opacity: 0.65;
+  transform-origin: left center;
+  
+  /* Prep browser for smooth layered movement */
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transition: transform 0.2s ease-in-out, z-index 0.2s, opacity 0.2s ease-in-out;
+}
+
+/* Hovering the link scales both the image and text simultaneously */
+#side-panel .menu-item-container a:hover {
+  z-index: 10;
+  opacity: 1;
+  transform: scale(1.15) translateZ(0);
+}
+
+
+#side-panel img {
+  width: 100%;        
+  height: auto;        
+  display: block;      
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: crisp-edges;
+}
+
+/* --- EDITABLE TEXT OVERLAY STYLES --- */
+.editable-text {
+  position: absolute;
+  top: 50%;            /* move down halfway */
+  left: 50%;           /* move right halfway */
+  transform: translate(-50%, -50%); /* perfectly centers the text box */
+  
+  color: white;        /* text appearance styles */
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* makes text readable on bright buttons */
+  
+  white-space: nowrap; 
+  cursor: text;        
+  outline: none;      
+}
+
+
+.editable-text:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+
+#textbox1 {
+    border: 2px solid rgb(96, 233, 243) ;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    padding: 6px;
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+
+    width: 720px;
+    height: 275px;
+    background-color: rgba(156, 245, 218, 0.76);
+}

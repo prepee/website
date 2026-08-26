@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="description"    content="Crzy4ChezXD's Website!"   >
+    <meta  name="author"    content="Crzy4ChezXD"   >
+    <link rel="icon" type="image/png" href="">
+    <title>Welcome to crzy4chez.party!</title>
+    <link rel="stylesheet" href="coolz.css">
+</head>
+
+<body background="images!/main site images/Background.gif">
+  <div class="topbar">
+    <img src="images/chezstudiosdefinetlynewlogo.png" style="margin-right: auto; width: 50px;">
+    <a href="index copy.html">Dark Mode</a>
+    <a href="index.html">Home </a>
+    <a href="/chez-studios-new-main/abtchezstudios.html">About</a>
+    <a href="chezstudiossocials.html">Socials</a>
+    <a href="archives.html">place holder</a>
+    <img src="images/chezstudiosdefinetlynewlogo.png" style="margin-left: auto; width: 50px;">
+</div>
+<center>
+<br>
+<br>
+<br>
+<br>
+<h1 style="background-color: rgb(109, 105, 158); padding: 30px; color: white;">hi look fies page is down there OoOooo </h1>
+<br>
+<br>
+<br>
+<br>
+</center>
+   <div class="bgimageholderlong"><!-- here is the text backround -->
+
+
+    <div class="bgcolor2">
+    <a id="menu-btn" class="topright2"><img src="https://crzy4chez.party/images!/webpage%20icons/MenuButton2.png"> </a>
+
+  <div id="side-panel" class="left-black-box">
+    <hr>
+    <p style="color: white; padding: 20px;">Sidebar Content</p>
+    <hr>
+<div class="menu-item-container"> 
+    <a href="/index.html">   
+      <img src="/images!/webpage icons/test image.png">  
+      <span class="editable-text" contenteditable="true">Main</span>
+    </a> 
+  </div>
+
+  <div class="menu-item-container"> 
+    <a href="/webpages.html">   
+      <img src="/images!/webpage icons/test image.png">  
+      <span class="editable-text" contenteditable="true">Webpages</span>
+    </a> 
+  </div>
+  <div class="menu-item-container"> 
+    <a href="Chez_studios!.html">   
+      <img src="/images!/webpage icons/test image.png">  
+      <span class="editable-text" contenteditable="true">chez studios</span>
+    </a> 
+  </div>
+  <div class="menu-item-container"> 
+    <a href="">   
+      <img src="/images!/webpage icons/test image.png">  
+      <span class="editable-text" contenteditable="true">placeholder</span>
+    </a> 
+  </div>
+  <div class="menu-item-container"> 
+    <a href="">   
+      <img src="/images!/webpage icons/test image.png">  
+      <span class="editable-text" contenteditable="true">placeholder</span>
+    </a> 
+  </div>
+  <div class="menu-item-container"> 
+    <a href="">   
+      <img src="/images!/webpage icons/test image.png">  
+      <span class="editable-text" contenteditable="true">placeholder</span>
+    </a> 
+  </div>
+
+  </div>  
+
+      
+ <hr>
+ <center>
+   <h1 style="font-family: Trebuchet MS; font-size:60px">proflie webpages!</h1>
+ </center>
+ <hr>
+<h1> freinds!</h1>
+<hr>
+ <br>
+
+  <div style="overflow: hidden;">
+   <a href="https://crzy4chez.party/dumb%20funk/fiefky3.html">  <button> <img style=" width: 280px; height: 165px" src="https://crzy4chez.party/images!/webpage%20icons/app_backgroundlong.png"> </button>  
+   <h style="color: rgb(0, 0, 0); font-family: Trebuchet MS; font-size:60px ">fiefky3</h> click on the text or image to open!</a>
+</div>
+<hr>
+
+</div>  
+    </div>
+   </div>
+
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const sidePanel = document.getElementById('side-panel');
+const menuImg = menuBtn.querySelector('img'); 
+
+menuBtn.addEventListener('click', () => {
+    sidePanel.classList.toggle('active');
+
+    const isPanelOpen = sidePanel.classList.contains('active');
+  
+    if (isPanelOpen) {
+
+     menuImg.src = 'https://crzy4chez.party/images!/webpage%20icons/MenuButton2.png';  
+    } else {
+
+        menuImg.src = 'https://crzy4chez.party/images!/webpage%20icons/MenuButton1.png';   
+    }
+});
+</script>
+<script>
+const wheel = document.getElementById('wheelMenu');
+const totalItems = 6; 
+const anglePerStep = 360 / totalItems;
+let currentRotation = 0;
+
+window.addEventListener('wheel', (event) => {
+  // Prevent regular page scrolling while using the menu
+  event.preventDefault(); 
+
+  if (event.deltaY > 0) {
+    // Scrolling down moves the wheel up
+    currentRotation -= anglePerStep;
+  } else {
+    // Scrolling up moves the wheel down
+    currentRotation += anglePerStep;
+  }
+
+  // Rotate the entire wheel structure
+  wheel.style.transform = `rotate(${currentRotation}deg)`;
+
+  // Correct the icon angles instantly so they never look tilted
+  const items = document.querySelectorAll('.wheel-item img');
+  items.forEach((img, index) => {
+    const baseAngle = -anglePerStep * index;
+    img.style.transform = `rotate(${-currentRotation + baseAngle}deg)`;
+  });
+}, { passive: false });
+</script>
